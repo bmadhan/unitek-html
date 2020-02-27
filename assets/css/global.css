@@ -1,0 +1,31 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: whitesmoke /* #E5EAEE;*/
+}
+
+.view-container {
+  padding: 1em;
+}
+
+.view-container .toolbar-container {
+  padding-bottom: 0.5em;
+}
+
+.mat-sidenav-content {
+  transform: none !important;
+  /*overflow-y: hidden !important;*/
+}
+
+mat-expansion-panel {
+  box-shadow: none !important;
+}
+
+.mat-expansion-panel-body {
+  padding: 0px 20px 10px 20px !important;
+}
+
+.mat-tab-body-content {
+  height: 100%;
+  overflow: hidden !important;
+}

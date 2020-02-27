@@ -1,0 +1,54 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$mat-bpi-blue: (
+  50 : #0e76bd,
+  100 : #0e76bd,
+  200 : #0e76bd,
+  300 : #0e76bd,
+  400 : #0e76bd,
+  500 : #0e76bd,
+  600 : #0e76bd,
+  700 : #0e76bd,
+  800 : #0e76bd,
+  900 : #0e76bd,
+  A100 : #0e76bd,
+  A200 : #0e76bd,
+  A400 : #0e76bd,
+  A700 : #0e76bd,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #ffffff,
+  )
+);
+
+.mat-tab-labels {
+  .mat-tab-label {
+    min-width: 72px;
+  }
+}
+
+.mat-list-item-content {
+  padding: 0 !important;
+}
+
+$primary: mat-palette($mat-bpi-blue);
+$accent: mat-palette($mat-orange, 200);
+
+$theme: mat-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
+
